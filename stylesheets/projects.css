@@ -1,0 +1,114 @@
+/*****************************************************************************
+ Fonts
+
+ Header: font-family: 'Saira Condensed', sans-serif;
+ Normal: font-family: 'Raleway', sans-serif;
+
+*****************************************************************************/
+
+@keyframes slideIn {
+    from {width: 0%;} to{width: 25%}
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, a, div {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 70px;
+}
+
+h3 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 30px;
+}
+
+.projectJumbotron {
+
+    height: 100vh;
+    background-image: url(../images/Code.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    padding-top: 20px;
+    background-color: rgba(0,0,0,0.4);
+    height: calc(100vh - 20px);
+    width: 100%;
+}
+
+.navbar {
+    display: table;
+    padding: 15px 75px 15px 75px;
+    border: 1px solid rgba(1000, 1000, 1000, 0.7);
+    border-radius: 7px;
+    margin: 0 auto;
+    color: rgba(1000, 1000, 1000, 0.7);
+}
+
+.navItem {
+    float: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navItem:hover {
+    cursor: pointer;
+    color: rgba(1000,1000,1000, 0.9);
+}
+
+.left {
+    margin-left: 75px;
+}
+
+.navWords {
+    margin-left: 2px;
+}
+
+.navLine {
+    width: 20%;
+    border-bottom: 1px solid rgba(540, 540, 20, 0.8);
+    transition: all 0.3s ease;
+}
+
+.navItem:hover .navLine {
+    width: 100%;
+}
+
+.jumbotronContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    color: rgba(1000, 1000, 1000, 0.9);
+    text-align: center;
+}
+
+.jumbotronContent h1 {
+    letter-spacing: 2px;
+
+}
+
+.jumbotronContent h3 {
+    letter-spacing: 3px;
+
+}
+
+#headerLine:after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid white;
+    height: 1px;
+    display: block;
+    margin: 20px auto;
+    width: 0%;
+    animation:slideIn 0.5s ease-in 0.5s forwards;
+}
+
