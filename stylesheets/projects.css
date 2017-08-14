@@ -10,6 +10,11 @@
     from {width: 0%;} to{width: 25%}
 }
 
+@keyframes fadingIn {
+    from {opacity:0} to{opacity: 1}
+
+}
+
 html, body, h1, h2, h3, h4, h5, h6, p, a, div {
     margin: 0;
     border: 0;
@@ -22,9 +27,18 @@ h1 {
     font-size: 70px;
 }
 
+h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 40px;
+}
+
 h3 {
     font-family: 'Saira Condensed', sans-serif;
     font-size: 30px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
 }
 
 .projectJumbotron {
@@ -32,6 +46,7 @@ h3 {
     height: 100vh;
     background-image: url(../images/Code.png);
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -104,11 +119,124 @@ h3 {
     content: '';
     bottom: 0;
     left: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(540, 540, 20, 1);
     height: 1px;
     display: block;
     margin: 20px auto;
     width: 0%;
-    animation:slideIn 0.5s ease-in 0.5s forwards;
+    animation:slideIn 0.5s ease-in 2s forwards;
 }
 
+.fadeIn {
+    opacity: 0;
+    animation: fadingIn 1.5s ease-in 0.5s forwards;
+    -webkit-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Firefox < 16 */
+    -ms-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Internet Explorer */
+    -o-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Opera < 12.1 */
+}
+
+.projectContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #25274d;
+    color: rgba(1000,1000,1000,0.7);
+}
+
+.projectImage {
+    width: 45%;
+}
+
+.projectContent {
+    width: 100%;
+
+
+}
+
+.projectContent h2 {
+    margin: 0 40px 0 40px;
+    font-weight: 200;
+}
+
+.projectContent p {
+    margin: 0 40px;
+}
+
+.divider {
+    width: 50px;
+    border-bottom: 5px solid rgba(1000,1000,1000, 0.2);
+    margin: 20px 40px;
+}
+
+.projectButton {
+    display: inline-block;
+    margin: 20px 0 0 40px;
+    background-color: #3a3c5e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: rgba(1000,1000,1000, 0.8);
+    font-family: 'Raleway', sans-serif;
+    transition: 0.3s all;
+}
+
+.projectButton:hover {
+    cursor: pointer;
+    background-color: #29648a
+}
+
+#project2 {
+    background-color: #212345;
+}
+
+#project3 {
+    background-color: #1d1f3d;
+}
+
+#project4 {
+    background-color: #191b35;
+}
+
+@media only screen and (max-width: 1350px) {
+    .projectContent h2 {
+        font-size: 30px;
+    }
+
+    .projectContent p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1125px) {
+    .projectContainer {
+        flex-wrap: wrap;
+    }
+
+    .projectContent h2 {
+        font-size: 50px;
+    }
+
+    .projectContent p {
+        font-size: 20px;
+    }
+
+    .projectContent {
+        padding: 50px 0;
+    }
+
+    .projectImage {
+        width: 100%;
+    }
+    .imageEven {
+        order: 1;
+        -moz-order: 1;
+        -webkit-order: 1;
+        -ms-order: 1;
+    }
+    .contentEven {
+        order: 2;
+        -moz-order: 2;
+        -webkit-order: 2;
+        -ms-order: 2;
+    }
+}
