@@ -1,0 +1,144 @@
+html, body, h1, h2, h3, h4, h5, h6, p, a, div {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#mainVideoContainer {
+    height: 100vh;
+    position: absolute;
+}
+
+#mainVideoContainer video {
+    position: fixed;
+    min-width: 100%;
+    z-index: -100;
+    min-height: 100vh;
+
+}
+
+.overlay {
+    padding-top: 20px;
+    background-color: rgba(0,0,0,0.2);
+    height: calc(100vh - 20px);
+    width: 100%;
+}
+
+.navbar {
+    display: table;
+    padding: 15px 75px 15px 75px;
+    border: 1px solid rgba(1000, 1000, 1000, 0.7);
+    border-radius: 7px;
+    margin: 0 auto;
+    color: rgba(1000, 1000, 1000, 0.7);
+}
+
+.navItem {
+    float: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navItem:hover {
+    cursor: pointer;
+    color: rgba(1000,1000,1000, 0.9);
+}
+.left {
+    margin-left: 75px;
+}
+
+.navWords {
+    margin-left: 2px;
+}
+
+.navLine {
+    width: 20%;
+    border-bottom: 1px solid rgba(540, 540, 20, 0.8);
+    transition: all 0.3s ease;
+}
+
+.navItem:hover .navLine {
+    width: 100%;
+}
+
+.navHamburger {
+    display: none;
+    margin-top: 20px;
+}
+
+.navHamburger:hover {
+    cursor: pointer;
+}
+
+.mobileNav {
+    display:none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.mobileNavItem {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #191b35;
+    color: rgba(1000,1000,1000,0.8);
+}
+
+.mobileNavItem:hover {
+    background-color: #25274d;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 650px) {
+    .navbar {
+        display:none;
+    }
+
+    .navHamburger {
+        display: block;
+        float: right;
+        margin-right: 40px;
+    }
+
+    .navHamburger i {
+        color: rgba(1000,1000,1000,0.8);
+        font-size: 30px;
+    }
+}

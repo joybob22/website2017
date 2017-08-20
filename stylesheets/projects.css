@@ -52,57 +52,10 @@ p {
 }
 
 .overlay {
-    padding-top: 20px;
     background-color: rgba(0,0,0,0.4);
-    height: calc(100vh - 20px);
-    width: 100%;
 }
 
-.navbar {
-    display: table;
-    padding: 15px 75px 15px 75px;
-    border: 1px solid rgba(1000, 1000, 1000, 0.7);
-    border-radius: 7px;
-    margin: 0 auto;
-    color: rgba(1000, 1000, 1000, 0.7);
-}
 
-.navItem {
-    float: left;
-    font-family: 'Raleway', sans-serif;
-}
-
-.navItem:hover {
-    cursor: pointer;
-    color: rgba(1000,1000,1000, 0.9);
-}
-
-.left {
-    margin-left: 75px;
-}
-
-.navWords {
-    margin-left: 2px;
-}
-
-.navLine {
-    width: 20%;
-    border-bottom: 1px solid rgba(540, 540, 20, 0.8);
-    transition: all 0.3s ease;
-}
-
-.navItem:hover .navLine {
-    width: 100%;
-}
-
-.navHamburger {
-    display: none;
-    margin-top: 20px;
-}
-
-.navHamburger:hover {
-    cursor: pointer;
-}
 
 .jumbotronContent {
     position: absolute;
@@ -234,28 +187,6 @@ p {
 
 
 
-.mobileNav {
-    display:none;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-.mobileNavItem {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    padding: 20px 0;
-    background-color: #191b35;
-    color: rgba(1000,1000,1000,0.8);
-}
-
-.mobileNavItem:hover {
-    background-color: #25274d;
-    cursor: pointer;
-}
-
-
 
 @media only screen and (max-width: 1500px) {
     .projectContent h2 {
@@ -301,19 +232,3 @@ p {
     }
 }
 
-@media only screen and (max-width: 650px) {
-    .navbar {
-        display:none;
-    }
-
-    .navHamburger {
-        display: block;
-        float: right;
-        margin-right: 40px;
-    }
-
-    .navHamburger i {
-        color: rgba(1000,1000,1000,0.8);
-        font-size: 30px;
-    }
-}

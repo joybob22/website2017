@@ -6,6 +6,48 @@
         <link rel="stylesheet" href="../stylesheets/main.css">
     </head>
     <body>
+        <div id="mainVideoContainer">
+            <video id="video" autoplay muted onended="playVideo()">
+                <source src="../video/websiteVideo540p.mp4" type="video/mp4">
+            </video>
+        </div>
 
+
+        <div class="mobileNav">
+            <p class="mobileNavItem">Home</p>
+            <p class="mobileNavItem">Projects</p>
+            <p class="mobileNavItem">Resume</p>
+            <p class="mobileNavItem">Contact</p>
+        </div>
+        <div class="navHamburger">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+
+        <div class="overlay">
+            <div class="navbar fadeIn1">
+                <div class="navItem" id="navItem1">
+                    <p class="navWords">Home</p>
+                    <div class="navLine" id="navLine1"></div>
+                </div>
+                <div class="navItem left">
+                    <p class="navWords">Projects</p>
+                    <div class="navLine"></div>
+                </div>
+                <div class="navItem left">
+                    <p class="navWords">Resume</p>
+                    <div class="navLine"></div>
+                </div>
+                <div class="navItem left">
+                    <p class="navWords">Contact</p>
+                    <div class="navLine"></div>
+                </div>
+            </div>
+        </div>
     </body>
+    <script src="https://use.fontawesome.com/10c8495019.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="../script/app.js"></script>
 </html>
