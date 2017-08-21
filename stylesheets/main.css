@@ -1,9 +1,64 @@
+/***********************************************************************
+*
+* Base Styles
+*
+***********************************************************************/
+
 html, body, h1, h2, h3, h4, h5, h6, p, a, div {
     margin: 0;
     border: 0;
     padding: 0;
     text-decoration: none;
 }
+
+h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+/***********************************************************************
+*
+* Animations
+*
+***********************************************************************/
+
+
+@keyframes slideIn {
+    from {width: 0;} to{width: 25%}
+}
+
+@keyframes slideInFull {
+    from {width: 0;} to{width: 100%}
+}
+
+@keyframes slideOutFull {
+    from {width: 100%;} to{width: 0}
+}
+
+@keyframes fadingIn {
+    from {opacity:0} to{opacity: 1}
+
+}
+
+/***********************************************************************
+*
+* Main Screen
+*
+***********************************************************************/
 
 #mainVideoContainer {
     height: 100vh;
@@ -92,6 +147,92 @@ html, body, h1, h2, h3, h4, h5, h6, p, a, div {
 }
 
 
+#jumbotronWords {
+    position: absolute;
+    bottom: 35%;
+    left: 60px;
+    width: 400px;
+}
+
+#jumbotronWords h1 {
+    color: rgba(1000,1000,1000,0.8);
+    font-weight: 100;
+}
+
+#jumbotronWords h1:after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(1000,1000,1000,0.5);
+    height: 1px;
+    display: block;
+    width: 0;
+    margin-bottom: 20px;
+    animation:slideInFull 1s ease-in 2s forwards;
+}
+
+#jumbotronWords p {
+    color: rgba(1000,1000,1000,0.5);
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.cursor {
+    font-size: 22px;
+    color: rgba(1000,1000,1000,1);
+    font-weight: 100;
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: fadingIn 1.5s ease-in 0.5s forwards;
+    -webkit-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Firefox < 16 */
+    -ms-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Internet Explorer */
+    -o-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Opera < 12.1 */
+}
+
+.fadeIn1 {
+    opacity: 0;
+    animation: fadingIn 1.5s ease-in 2.5s forwards;
+    -webkit-animation: fadingIn 1.5s ease-in 2.5s forwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadingIn 1.5s ease-in 2.5s forwards; /* Firefox < 16 */
+    -ms-animation: fadingIn 1.5s ease-in 2.5s forwards; /* Internet Explorer */
+    -o-animation: fadingIn 1.5s ease-in 2.5s forwards; /* Opera < 12.1 */
+}
+
+.wordsContainer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.wordsStyle {
+    height: 25px;
+    overflow: hidden;
+    margin-right: 5px;
+    transition: all 1s ease;
+}
+
+
+#downArrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+#downArrow:hover {
+    cursor: pointer;
+}
+
+#arrowImg {
+    width: 50px;
+}
+
+/***********************************************************************
+*
+* Main Content
+*
+***********************************************************************/
 
 
 
@@ -103,28 +244,11 @@ html, body, h1, h2, h3, h4, h5, h6, p, a, div {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/***********************************************************************
+*
+* Media Queries
+*
+***********************************************************************/
 
 @media only screen and (max-width: 650px) {
     .navbar {
