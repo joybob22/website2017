@@ -271,13 +271,17 @@ p {
     width: 40%;
 }
 
+.content p {
+    font-size: 20px;
+}
+
 .leftContent {
     margin-right: 50px;
 }
 
 .divider {
     border-bottom: 2px solid black;
-    width: 50px;
+    width: 75px;
     margin: 40px 0;
 }
 
@@ -338,7 +342,7 @@ p {
 }
 
 #endProgrammingContent {
-    height: 100vh;
+    height: 50vh;
     background-image: url(../images/freethrow.jpg);
     background-attachment: fixed;
     background-size: cover;
