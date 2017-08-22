@@ -235,12 +235,115 @@ p {
 ***********************************************************************/
 
 
+#introContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10px;
+    background-color: #29648a;
+}
 
+.introItem {
+    text-align: center;
+    width: 200px;
+}
 
+.introItem i {
+    font-size: 45px;
+    margin-bottom: 5px;
+}
 
+.introItem h4 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: rgba(1000,1000,1000,0.7);
+}
 
+#programmingContent {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
 
+.content {
+    width: 40%;
+}
 
+.leftContent {
+    margin-right: 50px;
+}
+
+.divider {
+    border-bottom: 2px solid black;
+    width: 50px;
+    margin: 40px 0;
+}
+
+#mySetup {
+    background-image: url(../images/mySetup.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+#programmingSkills {
+    background-color: #29648a;
+    padding: 100px 0;
+}
+
+#skillsContent {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.skillWords {
+    overflow: hidden;
+    margin: 10px 10px 0 10px;
+}
+
+.skillName {
+    font-family: 'Raleway', sans-serif;
+    float: left;
+}
+
+.skillPercent {
+    font-family: 'Raleway', sans-serif;
+    float: right;
+}
+
+.skillContainer {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #29648a;
+    border: 1px solid black;
+    height: 20px;
+    margin-top: 5px;
+}
+
+#skillHTML, #skillCSS, #skillangular, #skilljavascript, #skilljQuery {
+    width: 90%;
+    height: 100%;
+    margin-left: -1px;
+    border-radius: 20px;
+    background-color: #191b35;
+}
+
+#skilljQuery {
+    width: 70%;
+}
+
+#skilljavascript, #skillangular {
+    width: 60%;
+}
+
+#endProgrammingContent {
+    height: 100vh;
+    background-image: url(../images/freethrow.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
 
 
 
