@@ -63,6 +63,7 @@ p {
 #mainVideoContainer {
     height: 100vh;
     position: absolute;
+
 }
 
 #mainVideoContainer video {
@@ -70,6 +71,10 @@ p {
     min-width: 100%;
     z-index: -100;
     min-height: 100vh;
+    background-image: url(../images/backupImg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 
 }
 
@@ -267,7 +272,7 @@ p {
     color: rgba(1000,1000,1000,0.4);
 }
 
-#programmingContent {
+#programmingContent, #activeContent {
     padding: 100px 0;
     display: flex;
     justify-content: center;
@@ -301,6 +306,7 @@ p {
 #programmingSkills {
     background-color: #eddbcd;
     padding: 100px 0;
+    border-top: 1px solid rgba(1000,1000,1000,0.2);
 }
 
 #skillsContent {
@@ -354,6 +360,12 @@ p {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+}
+
+#bballImg {
+    background-image: url(../images/bball.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 
