@@ -97,11 +97,12 @@ p {
 .navItem {
     float: left;
     font-family: 'Raleway', sans-serif;
+    transition: all 0.3s;
 }
 
 .navItem:hover {
     cursor: pointer;
-    color: rgba(1000,1000,1000, 0.9);
+    color: #F1A970;
 }
 .left {
     margin-left: 75px;
@@ -272,7 +273,7 @@ p {
     color: rgba(1000,1000,1000,0.4);
 }
 
-#programmingContent, #activeContent {
+#programmingContent, #activeContent, #futureContent {
     padding: 100px 0;
     display: flex;
     justify-content: center;
@@ -368,6 +369,61 @@ p {
     background-size: cover;
 }
 
+.shorten {
+    width: 500px;
+}
+
+.parallax {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#snowboardingParallax {
+    background-image: url(../images/snowboarding.JPG);
+}
+
+#basketballParallax {
+    background-image: url(../images/layup.jpg);
+}
+
+#golfingParallax {
+    background-image: url(../images/golf.png);
+}
+
+#futureImg {
+    background-image: url(../images/roses.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+#footer {
+    padding: 100px 0 0 0;
+    background-color: #333a56;
+}
+
+#links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.iconLink {
+    font-size: 70px !important;
+    color: rgba(1000,1000,1000,0.6);
+    transition: all 0.3s;
+}
+
+.iconLink:hover {
+    color: #F1A970;
+}
+
+#lastWords {
+    text-align: center;
+    color: rgba(1000,1000,1000,0.6);
+    padding-bottom: 5px;
+}
 
 
 /***********************************************************************
