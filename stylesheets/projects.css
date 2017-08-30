@@ -44,8 +44,11 @@ p {
     background-repeat: no-repeat;
 }
 
-.overlay {
+.overlay1 {
+    padding-top: 20px;
     background-color: rgba(0,0,0,0.4);
+    height: calc(100vh - 20px);
+    width: 100%;
 }
 
 
@@ -73,7 +76,7 @@ p {
     content: '';
     bottom: 0;
     left: 0;
-    border-bottom: 1px solid rgba(540, 540, 20, 1);
+    border-bottom: 1px solid #F1A970;
     height: 1px;
     display: block;
     margin: 20px auto;
@@ -103,8 +106,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #25274d;
-    color: rgba(1000,1000,1000,0.7);
+    background-color: #e0ebf4;
 }
 
 .projectImage {
@@ -128,7 +130,6 @@ p {
 
 .divider {
     width: 50px;
-    border-bottom: 5px solid rgba(1000,1000,1000, 0.2);
     margin: 20px 40px;
 }
 
@@ -149,23 +150,23 @@ p {
 }
 
 #project2 {
-    background-color: #1d1f3d;
+    background-color: #cddfed;
 }
 
 #project3 {
-    background-color: #191b35;
+    background-color: #bad3e6;
 }
 
 #project4 {
-    background-color: #121326;
+    background-color: #f4e9e0;
 }
 
 #project5 {
-    background-color: #191b35
+    background-color: #eddbcd;
 }
 
 #project6 {
-    background-color: #1d1f3d;
+    background-color: #e6ceba;
 }
 
 #project7 {
@@ -191,7 +192,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 1125px) {
+@media only screen and (max-width: 1125px), (max-device-width: 1024px) {
     .projectContainer {
         flex-wrap: wrap;
     }
