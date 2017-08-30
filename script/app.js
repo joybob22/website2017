@@ -1,4 +1,19 @@
-var myVideo = $("#video");
+if($(window).width() >= 850) {
+    $("#mainVideoContainer").append(`
+            <video id="video" autoplay muted onended="playVideo()">
+                <source src="video/websiteVideo540p.mp4" type="video/mp4">
+            </video>`
+    );
+
+
+
+    var myVideo = $("#video");
+} else {
+    $(".overlay").addClass("mobileImage");
+}
+
+
+
 var wordsContainer = $("#slidingWords");
 var words = ["Welcome!", "Scroll down to learn more about me.", "To summarize ...", "I am a Junior Web Developer", "I love to learn", "And I really enjoy snowboarding", "Enjoy!"];
 var position = 0;

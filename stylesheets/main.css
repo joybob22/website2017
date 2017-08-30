@@ -143,12 +143,12 @@ p {
     font-size: 20px;
     text-align: center;
     padding: 20px 0;
-    background-color: #191b35;
-    color: rgba(1000,1000,1000,0.8);
+    background-color: rgba(1000,1000,1000,0.7);
+    color: black;
 }
 
 .mobileNavItem:hover {
-    background-color: #25274d;
+    background-color: rgba(239, 155, 89, 0.7);
     cursor: pointer;
 }
 
@@ -356,11 +356,7 @@ p {
 }
 
 #endProgrammingContent {
-    height: 50vh;
     background-image: url(../images/freethrow.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
 }
 
 #bballImg {
@@ -425,6 +421,20 @@ p {
     padding-bottom: 5px;
 }
 
+.mobileImageContent {
+    display: none;
+}
+
+.mobileImage {
+    background-image: url(../images/meStanding.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#meParallax {
+    background-image: url(../images/meClosup.jpg);
+}
+
 
 /***********************************************************************
 *
@@ -432,7 +442,24 @@ p {
 *
 ***********************************************************************/
 
-@media only screen and (max-width: 650px) {
+
+@media only screen and (max-width: 1100px) {
+    .shorten {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
     .navbar {
         display:none;
     }
@@ -446,5 +473,72 @@ p {
     .navHamburger i {
         color: rgba(1000,1000,1000,0.8);
         font-size: 30px;
+    }
+
+    #futureContent, #activeContent, #programmingContent {
+        flex-wrap: wrap;
+    }
+
+    .wordContent {
+        order: 1;
+        -moz-order: 1;
+        -webkit-order: 1;
+        -ms-order: 1;
+        width: 80%;
+    }
+
+    .wordContent h1, #skillsContent h1 {
+        text-align: center;
+    }
+
+    .leftContent {
+        margin: 0;
+    }
+
+    .divider {
+        margin: 40px auto;
+        width: 150px;
+    }
+
+    .contentImg {
+        order: 2;
+        -moz-order: 2;
+        -webkit-order: 2;
+        -ms-order: 2;
+        width: 80%;
+        margin-top: 50px;
+    }
+    .mobileImageContent {
+        display: block;
+        width: 100%;
+    }
+
+    .overlay {
+        background-image: url(../images/meStanding.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    #jumbotronWords {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #jumbotronWords h1 {
+        text-align: center;
+        color: white;
+    }
+
+    #jumbotronWords span{
+        color: white;
+    }
+
+    .parallax {
+        background-attachment: scroll;
+    }
+
+    #mainVideoContainer {
+        display: none;
     }
 }
