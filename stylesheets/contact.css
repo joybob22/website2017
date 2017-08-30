@@ -1,0 +1,65 @@
+#contactContainer {
+    height: 100vh;
+    background-image: url(../images/landscape.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay1 {
+    padding-top: 20px;
+    background-color: rgba(0,0,0,0.2);
+    height: calc(100vh - 20px);
+    width: 100%;
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: fadingIn 1.5s ease-in 0.5s forwards;
+    -webkit-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Firefox < 16 */
+    -ms-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Internet Explorer */
+    -o-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Opera < 12.1 */
+}
+
+.fadeIn1 {
+    opacity: 0;
+    animation: fadingIn 1.5s ease-in 2.5s forwards;
+    -webkit-animation: fadingIn 1.5s ease-in 2.5s forwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadingIn 1.5s ease-in 2.5s forwards; /* Firefox < 16 */
+    -ms-animation: fadingIn 1.5s ease-in 2.5s forwards; /* Internet Explorer */
+    -o-animation: fadingIn 1.5s ease-in 2.5s forwards; /* Opera < 12.1 */
+}
+
+#contactContent {
+    background-color: #333a56;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    text-align: center;
+    color: #F1A970;
+}
+
+#circleImage {
+    height: 150px;
+    width: 150px;
+    margin: 40px auto 20px auto;
+    background-image: url(../images/squareImage.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+}
+
+#contactContent h3 {
+    color: rgba(1000,1000,1000,0.7);
+}
+
+#links {
+    margin: 20px 0 20px;
+}
+
+#links i:hover {
+    cursor: pointer;
+}
