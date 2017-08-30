@@ -140,10 +140,10 @@ p {
 
 .mobileNavItem {
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    padding: 20px 0;
-    background-color: rgba(1000,1000,1000,0.7);
+    padding: 30px 0;
+    background-color: #F1A970;
     color: black;
 }
 
@@ -471,8 +471,8 @@ p {
     }
 
     .navHamburger i {
-        color: rgba(1000,1000,1000,0.8);
-        font-size: 30px;
+        color: white;
+        font-size: 50px;
     }
 
     #futureContent, #activeContent, #programmingContent {
@@ -540,5 +540,9 @@ p {
 
     #mainVideoContainer {
         display: none;
+    }
+
+    .introItem p, .introItem i {
+        color: white;
     }
 }
