@@ -106,7 +106,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e0ebf4;
+    background-color: #0050a1;
 }
 
 .projectImage {
@@ -115,8 +115,7 @@ p {
 
 .projectContent {
     width: 100%;
-
-
+    color: rgba(1000,1000,1000,0.7);
 }
 
 .projectContent h2 {
@@ -136,41 +135,41 @@ p {
 .projectButton {
     display: inline-block;
     margin: 20px 0 0 40px;
-    background-color: #3a3c5e;
+    background-color: #F1A970;
     padding: 10px 20px;
     border-radius: 5px;
-    color: rgba(1000,1000,1000, 0.8);
+    color: black;
     font-family: 'Raleway', sans-serif;
     transition: 0.3s all;
 }
 
 .projectButton:hover {
     cursor: pointer;
-    background-color: #29648a
+    background-color: #ec8d41;
 }
 
 #project2 {
-    background-color: #cddfed;
+    background-color: #00478d;
 }
 
 #project3 {
-    background-color: #bad3e6;
+    background-color: #003d7a;
 }
 
 #project4 {
-    background-color: #f4e9e0;
+    background-color: #003366;
 }
 
 #project5 {
-    background-color: #eddbcd;
+    background-color: #002952;
 }
 
 #project6 {
-    background-color: #e6ceba;
+    background-color: #001f3f;
 }
 
 #project7 {
-    background-color: #25274d;
+    background-color: #00162b;
 }
 
 

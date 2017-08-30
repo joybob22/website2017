@@ -1,3 +1,7 @@
+//----------------------------------------------------------------------------
+// Check to see if we are on a phone. If not add the video background
+//----------------------------------------------------------------------------
+
 if($(window).width() >= 950) {
     $("#mainVideoContainer").append(`
             <video id="video" autoplay muted onended="playVideo()">
@@ -12,7 +16,17 @@ if($(window).width() >= 950) {
     $(".overlay").addClass("mobileImage");
 }
 
+//----------------------------------------------------------------------------
+// Add the current year to the footer
+//----------------------------------------------------------------------------
 
+var date = new Date();
+var year = date.getFullYear();
+$("#year").text(year);
+
+//----------------------------------------------------------------------------
+// The typed text code
+//----------------------------------------------------------------------------
 
 var wordsContainer = $("#slidingWords");
 var words = ["Welcome!", "Scroll down to learn more about me.", "To summarize ...", "I am a Junior Web Developer", "I love to learn", "And I really enjoy snowboarding", "Enjoy!"];
