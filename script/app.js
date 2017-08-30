@@ -1,4 +1,4 @@
-if($(window).width() >= 850) {
+if($(window).width() >= 950) {
     $("#mainVideoContainer").append(`
             <video id="video" autoplay muted onended="playVideo()">
                 <source src="video/websiteVideo540p.mp4" type="video/mp4">
