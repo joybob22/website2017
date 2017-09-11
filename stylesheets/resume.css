@@ -50,7 +50,7 @@ p {
     to {transform: rotate(270deg);}
 }
 
-.projectJumbotron {
+.resumeJumbotron {
 
     height: 100vh;
     background-image: url(../images/Flowers.JPG);
