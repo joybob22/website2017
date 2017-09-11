@@ -1,0 +1,193 @@
+/*****************************************************************************
+ Fonts
+
+ Header: font-family: 'Saira Condensed', sans-serif;
+ Normal: font-family: 'Raleway', sans-serif;
+
+*****************************************************************************/
+
+
+
+html, body, h1, h2, h3, h4, h5, h6, p, a, div {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 70px;
+}
+
+h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 25px;
+    color: black;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+@keyframes rotate {
+    from {transform: rotate(270deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes secondRotate {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(270deg);}
+}
+
+.projectJumbotron {
+
+    height: 100vh;
+    background-image: url(../images/Flowers.JPG);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.overlay1 {
+    padding-top: 20px;
+    background-color: rgba(0,0,0,0.4);
+    height: calc(100vh - 20px);
+    width: 100%;
+}
+
+
+
+.jumbotronContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    color: rgba(1000, 1000, 1000, 0.9);
+    text-align: center;
+}
+
+.jumbotronContent h1 {
+    letter-spacing: 2px;
+}
+
+.jumbotronContent h3 {
+    letter-spacing: 3px;
+
+}
+
+#headerLine:after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #F1A970;
+    height: 1px;
+    display: block;
+    margin: 20px auto;
+    width: 0;
+    animation:slideIn 0.5s ease-in 2s forwards;
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: fadingIn 1.5s ease-in 0.5s forwards;
+    -webkit-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Firefox < 16 */
+    -ms-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Internet Explorer */
+    -o-animation: fadingIn 1.5s ease-in 0.5s forwards; /* Opera < 12.1 */
+}
+
+.fadeIn1 {
+    opacity: 0;
+    animation: fadingIn 1.5s ease-in 2.5s forwards;
+    -webkit-animation: fadingIn 1.5s ease-in 2.5s forwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadingIn 1.5s ease-in 2.5s forwards; /* Firefox < 16 */
+    -ms-animation: fadingIn 1.5s ease-in 2.5s forwards; /* Internet Explorer */
+    -o-animation: fadingIn 1.5s ease-in 2.5s forwards; /* Opera < 12.1 */
+}
+
+#intro {
+    padding: 50px 0;
+    background-color: #333a56;
+    text-align: center;
+    overflow: hidden;
+}
+
+#circleImage {
+    background-image: url(../images/squareImage.jpg);
+    width: 200px; 
+    height: 200px;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+#buttonToStart {
+    background-color: #F1A970;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+#buttonToStart i{
+    margin-right: 10px;
+    font-size: 40px;
+    transform: rotate(270deg);
+    color: black;
+}
+
+#buttonToStart:hover {
+    cursor: pointer;
+}
+
+.showContentRotate {
+    animation: rotate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.hideContentRotate {
+    animation: secondRotate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#resumeContent {
+    background-color: #e8e8e8;
+}
+
+#resumeButtonContainer {
+    width: 80%;
+    text-align: right;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#resumeButtonContainer a {
+    padding: 10px 20px;
+    background-color: #F1A970;
+    font-size: 20px;
+    font-family: "Raleway";
+    color: black;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+#resumeButtonContainer a:hover {
+    background-color: #f4b787;
+}
