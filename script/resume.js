@@ -8,5 +8,12 @@ $("#buttonToStart").on("click", function() {
     } else {
         $("#specialWord").text("Start");
     }
-    
+});
+
+$(".navHamburger").on("click", function() {
+    $(".mobileNav").slideToggle();
+});
+
+$("#container").on("click", function() {
+    $(".mobileNav").css("display", "none");
 });
