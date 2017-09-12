@@ -67,7 +67,11 @@ p {
     width: 100%;
 }
 
-
+.divider {
+    width: 75px;
+    margin: 20px 0 0 0;
+    border-color: #F1A970;
+}
 
 .jumbotronContent {
     position: absolute;
@@ -190,4 +194,36 @@ p {
 
 #resumeButtonContainer a:hover {
     background-color: #f4b787;
+}
+
+.resumeArea {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.resumeTitle {
+    font-size: 50px;
+}
+
+.content {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.notTopContent {
+    border-top: 1px solid #dbdbdb;
+}
+
+.content h5 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.headers {
+    margin-bottom: 10px;
+}
+
+.headers h5 {
+    margin-bottom: -7px;
 }
