@@ -227,3 +227,57 @@ p {
 .headers h5 {
     margin-bottom: -7px;
 }
+
+.skillsContent {
+    margin-top: 30px;
+}
+
+.skillRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.theSkill {
+    width: 49%;
+}
+
+.skillContainer {
+    background-color: #e8e8e8;
+    border: 1px solid #333a56;
+}
+
+.filler {
+    background-color: #333a56;
+    height: 100%;
+    border-radius: 20px;
+    margin-left: -1px;
+    padding-right: 1px;
+}
+
+#getDone, #ethic, #life {
+    width: 100%;
+}
+
+#people, #html, #css {
+    width: 90%;
+}
+
+#javascript, #jquery, #angular, #angular2 {
+    width: 60%;
+}
+
+#node, #express, #mongo {
+    width: 40%;
+}
+
+#sql {
+    width: 30%;
+}
+
+#ruby, #rubyOnRails {
+    width: 20%;
+}
+
+#skills {
+    padding-bottom: 50px;
+}

@@ -1,3 +1,7 @@
+var date = new Date();
+var year = date.getFullYear();
+$("#year").text(year);
+
 $("#buttonToStart").on("click", function() {
     $("#arrow").toggleClass("hideContentRotate");
     $("#arrow").toggleClass("showContentRotate");
