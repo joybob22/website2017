@@ -262,7 +262,11 @@ p {
     width: 90%;
 }
 
-#javascript, #jquery, #angular, #angular2 {
+#jquery {
+    width: 70%;
+}
+
+#javascript, #angular, #angular2 {
     width: 60%;
 }
 
