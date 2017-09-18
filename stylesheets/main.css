@@ -311,6 +311,14 @@ p {
     border-top: 1px solid rgba(1000,1000,1000,0.2);
 }
 
+.link {
+    color: #F1A970
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
 #skillsContent {
     width: 85%;
     margin: 0 auto;
