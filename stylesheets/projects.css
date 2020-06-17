@@ -23,6 +23,7 @@ h1 {
 h2 {
     font-family: 'Saira Condensed', sans-serif;
     font-size: 40px;
+    color: white;
 }
 
 h3 {
@@ -32,6 +33,7 @@ h3 {
 
 p {
     font-family: 'Raleway', sans-serif;
+    color: rgba(1000, 1000, 1000, 0.7);
 }
 
 .projectJumbotron {

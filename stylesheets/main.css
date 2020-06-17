@@ -348,8 +348,8 @@ p {
     margin-top: 5px;
 }
 
-#skillHTML, #skillCSS, #skillangular, #skilljavascript, #skilljQuery {
-    width: 90%;
+#skillHTML, #skillCSS, #skillangular, #skilljavascript, #skilljQuery, #skillreact {
+    width: 99%;
     height: 100%;
     margin-left: -1px;
     border-radius: 20px;
@@ -357,10 +357,14 @@ p {
 }
 
 #skilljQuery {
-    width: 70%;
+    width: 80%;
 }
 
 #skilljavascript, #skillangular {
+    width: 80%;
+}
+
+#skillreact {
     width: 60%;
 }
 
@@ -435,7 +439,7 @@ p {
 }
 
 .mobileImage {
-    background-image: url(../images/meStanding.jpg);
+    background-image: url(../images/meOcean.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -459,8 +463,28 @@ p {
 }
 
 @media only screen and (max-width: 1050px) {
-    h1 {
-        font-size: 40px;
+    #jumbotronWords h1 {
+        font-size: 120px;
+    }
+
+    #jumbotronWords {
+        width: 80%;
+    }
+
+    #jumbotronWords p {
+        font-size: 45px;
+    }
+    .wordsStyle {
+        height: auto;
+    }
+
+    .cursor {
+        font-size: 60px;
+        margin-top: -5px;
+    }
+
+    #jumbotronWords h1:after {
+        border-bottom: 3px solid #F1A970;
     }
 
     .content p {
@@ -523,8 +547,7 @@ p {
     }
 
     .overlay {
-        background-image: url(../images/meStanding.jpg);
-        background-position: center;
+        background-image: url(../images/meOcean.jpg);
         background-size: cover;
     }
 
