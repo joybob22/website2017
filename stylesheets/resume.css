@@ -262,23 +262,23 @@ p {
     width: 90%;
 }
 
-#jquery {
-    width: 70%;
+#javascript, #angular2, #jquery {
+    width: 80%;
 }
 
-#javascript, #angular, #angular2 {
+#angular, #reactjs, #node{
     width: 60%;
 }
 
-#node, #express, #mongo {
+#express {
+    width: 50%;
+}
+
+#mongo, #sql {
     width: 40%;
 }
 
-#sql {
-    width: 30%;
-}
-
-#ruby, #rubyOnRails {
+#rubyOnRails {
     width: 20%;
 }
 
